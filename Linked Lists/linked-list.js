@@ -93,6 +93,26 @@ class LinkedList {
             }
         }
     }
+
+    findKNode() {
+        if (this.head === null) {
+            return;
+        }
+        let firstPointer = this.head;
+        let secondP = this.head;
+        for (let i = 0; i < k; i++) {
+            if (firstPointer === null) {
+                return null
+            } else {
+                firstPointer = firstPointer.next;
+            }
+        }
+        while (firstPointer !== null) {
+            firstPointer = firstPointer.next;
+            secondP = secondP.next;
+        }
+        return secondP;
+    }
 }
 
 const list = new LinkedList();
@@ -105,5 +125,6 @@ list.append(1);
 list.append(2);
 //list.insert(0,3)
 //list.delete(7);
-list.deleteDuplicates();
-console.log(list);
+//list.deleteDuplicates();
+//console.log(list);
+console.log(list.deleteDuplicates(3));
