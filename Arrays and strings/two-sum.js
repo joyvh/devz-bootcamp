@@ -1,10 +1,9 @@
 function twoSums(nums, target) {
     let dic = {};
-    let compliment;
     let arrLength = nums.length;
 
-    for (i = 0; i < arrLength; i++) {
-        complement = target - nums[i];
+    for (let i = 0; i < arrLength; i++) {
+        let complement = target - nums[i];
         if (complement in dic) {
             return [dic[complement], i];
         }
