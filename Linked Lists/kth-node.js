@@ -53,4 +53,4 @@ list.append(5);
 list.append(9);
 list.append(1);
 list.append(2);
-console.log(list.deleteDuplicates(3));
+console.log(list.findKNode(3));

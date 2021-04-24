@@ -127,4 +127,4 @@ list.append(2);
 //list.delete(7);
 //list.deleteDuplicates();
 //console.log(list);
-console.log(list.deleteDuplicates(3));
+console.log(list.findKNode(3));
